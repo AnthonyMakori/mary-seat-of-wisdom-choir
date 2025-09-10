@@ -1,18 +1,22 @@
 import { useState } from "react";
 import { Menu, X, Music, Users, Calendar, Phone, Play, Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home", icon: Music },
-    { name: "About", href: "#about", icon: Users },
-    { name: "Media", href: "#media", icon: Play },
-    { name: "Gallery", href: "#gallery", icon: Camera },
-    { name: "Schedule", href: "#schedule", icon: Calendar },
-    { name: "Events", href: "#events", icon: Calendar },
-    { name: "Contact", href: "#contact", icon: Phone },
+    { name: "Home", href: "/", icon: Music },
+    { name: "About", href: "/about", icon: Users },
+    { name: "Media", href: "/media", icon: Play },
+    { name: "Schedule", href: "/schedule", icon: Calendar },
+    { name: "Contact", href: "/contact", icon: Phone },
   ];
 
   return (
@@ -33,14 +37,14 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors duration-300 font-inter font-medium"
               >
                 <item.icon className="w-4 h-4" />
                 <span>{item.name}</span>
-              </a>
+              </Link>
             ))}
             <Button variant="outline" size="sm" className="font-inter">
               Member Login
@@ -49,38 +53,32 @@ const Navigation = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setIsOpen(!isOpen)}
-              className="p-2"
-            >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </Button>
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="sm" className="p-2">
+                  <Menu className="w-6 h-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left" className="w-80">
+                <div className="flex flex-col space-y-6 mt-8">
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className="flex items-center space-x-3 text-foreground hover:text-primary transition-colors duration-300 font-inter font-medium py-2 text-lg"
+                    >
+                      <item.icon className="w-5 h-5" />
+                      <span>{item.name}</span>
+                    </Link>
+                  ))}
+                  <Button variant="outline" size="sm" className="font-inter w-fit">
+                    Member Login
+                  </Button>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden pb-4">
-            <div className="flex flex-col space-y-3">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="flex items-center space-x-3 text-foreground hover:text-primary transition-colors duration-300 font-inter font-medium py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <item.icon className="w-5 h-5" />
-                  <span>{item.name}</span>
-                </a>
-              ))}
-              <Button variant="outline" size="sm" className="font-inter w-fit">
-                Member Login
-              </Button>
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   );
