@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Music, Users, Calendar, Phone } from "lucide-react";
+import { Menu, X, Music, Users, Calendar, Phone, Play, Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -8,6 +8,9 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", href: "#home", icon: Music },
     { name: "About", href: "#about", icon: Users },
+    { name: "Media", href: "#media", icon: Play },
+    { name: "Gallery", href: "#gallery", icon: Camera },
+    { name: "Schedule", href: "#schedule", icon: Calendar },
     { name: "Events", href: "#events", icon: Calendar },
     { name: "Contact", href: "#contact", icon: Phone },
   ];
