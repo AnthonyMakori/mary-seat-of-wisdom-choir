@@ -14,17 +14,17 @@ const About = () => {
   const leadership = [
     {
       role: "Choir Master",
-      name: "Rev. Fr. Michael Thompson",
+      name: "Mr. Calistus Mwamzinyi",
       description: "Leading our musical ministry with 20+ years of experience"
     },
     {
       role: "Assistant Director",
-      name: "Mrs. Sarah Johnson",
+      name: "Mr. Eric Mwangi",
       description: "Coordinating rehearsals and member development"
     },
     {
       role: "Organist",
-      name: "Mr. David Williams",
+      name: "John Mbuvi",
       description: "Professional accompanist and music theory instructor"
     }
   ];
