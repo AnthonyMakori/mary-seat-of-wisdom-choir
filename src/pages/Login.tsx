@@ -48,11 +48,11 @@ const Login = () => {
   };
 
   const mockCredentials = [
-    { email: "admin@mwow.choir", password: "admin123", role: "Admin" },
-    { email: "soprano@mwow.choir", password: "member123", role: "Soprano Member" },
-    { email: "alto@mwow.choir", password: "member123", role: "Alto Member" },
-    { email: "tenor@mwow.choir", password: "member123", role: "Tenor Member" },
-    { email: "bass@mwow.choir", password: "member123", role: "Bass Member" },
+    { email: "admin@msow.choir", password: "admin123", role: "Admin" },
+    { email: "soprano@msow.choir", password: "member123", role: "Soprano Member" },
+    { email: "alto@msow.choir", password: "member123", role: "Alto Member" },
+    { email: "tenor@msow.choir", password: "member123", role: "Tenor Member" },
+    { email: "bass@msow.choir", password: "member123", role: "Bass Member" },
   ];
 
   return (
@@ -65,7 +65,7 @@ const Login = () => {
               <Music className="w-8 h-8 text-primary-foreground" />
             </div>
           </div>
-          <h1 className="font-playfair text-3xl font-bold text-foreground">MWOW Choir</h1>
+          <h1 className="font-playfair text-3xl font-bold text-foreground">MSOW Choir</h1>
           <p className="text-muted-foreground font-inter">Member Portal</p>
         </div>
 
@@ -84,7 +84,7 @@ const Login = () => {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="your.email@mwow.choir"
+                  placeholder="your.email@msow.choir"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required

@@ -32,7 +32,7 @@ const Navigation = () => {
               <Music className="w-6 h-6 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="font-playfair font-bold text-xl text-foreground">MWOW</h1>
+              <h1 className="font-playfair font-bold text-xl text-foreground">MSOW</h1>
               <p className="text-xs text-muted-foreground font-inter">Choir</p>
             </div>
           </div>

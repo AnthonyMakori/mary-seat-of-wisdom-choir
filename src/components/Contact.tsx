@@ -46,7 +46,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["choir@stmarysparish.org", "director@mwowchoir.org"]
+      details: ["choir@stmarysparish.org", "director@msowchoir.org"]
     },
     {
       icon: Clock,
