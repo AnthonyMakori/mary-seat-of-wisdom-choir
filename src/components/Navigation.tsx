@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Menu, X, Music, Users, Calendar, Phone, Play, Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "@/contexts/AuthContext";
 import {
   Sheet,
   SheetContent,
@@ -10,6 +11,8 @@ import {
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { user } = useAuth();
+  const navigate = useNavigate();
 
   const navItems = [
     { name: "Home", href: "/", icon: Music },
@@ -46,9 +49,25 @@ const Navigation = () => {
                 <span>{item.name}</span>
               </Link>
             ))}
-            <Button variant="outline" size="sm" className="font-inter">
-              Member Login
-            </Button>
+            {user ? (
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="font-inter"
+                onClick={() => navigate('/dashboard')}
+              >
+                Dashboard
+              </Button>
+            ) : (
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="font-inter"
+                onClick={() => navigate('/login')}
+              >
+                Member Login
+              </Button>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -71,9 +90,25 @@ const Navigation = () => {
                       <span>{item.name}</span>
                     </Link>
                   ))}
-                  <Button variant="outline" size="sm" className="font-inter w-fit">
-                    Member Login
-                  </Button>
+                  {user ? (
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="font-inter w-fit"
+                      onClick={() => navigate('/dashboard')}
+                    >
+                      Dashboard
+                    </Button>
+                  ) : (
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="font-inter w-fit"
+                      onClick={() => navigate('/login')}
+                    >
+                      Member Login
+                    </Button>
+                  )}
                 </div>
               </SheetContent>
             </Sheet>
