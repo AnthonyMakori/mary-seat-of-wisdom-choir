@@ -20,51 +20,51 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 // Mock users database
 const mockUsers: Record<string, { password: string; user: User }> = {
-  "admin@mwow.choir": {
+  "admin@msow.choir": {
     password: "admin123",
     user: {
       id: "1",
       name: "Fr. Michael Director",
-      email: "admin@mwow.choir",
+      email: "admin@msow.choir",
       role: "admin"
     }
   },
-  "soprano@mwow.choir": {
+  "soprano@msow.choir": {
     password: "member123",
     user: {
       id: "2",
       name: "Maria Soprano",
-      email: "soprano@mwow.choir",
+      email: "soprano@msow.choir",
       role: "member",
       voicePart: "Soprano"
     }
   },
-  "alto@mwow.choir": {
+  "alto@msow.choir": {
     password: "member123",
     user: {
       id: "3",
       name: "Grace Alto",
-      email: "alto@mwow.choir",
+      email: "alto@msow.choir",
       role: "member",
       voicePart: "Alto"
     }
   },
-  "tenor@mwow.choir": {
+  "tenor@msow.choir": {
     password: "member123",
     user: {
       id: "4",
       name: "John Tenor",
-      email: "tenor@mwow.choir",
+      email: "tenor@msow.choir",
       role: "member",
       voicePart: "Tenor"
     }
   },
-  "bass@mwow.choir": {
+  "bass@msow.choir": {
     password: "member123",
     user: {
       id: "5",
       name: "David Bass",
-      email: "bass@mwow.choir",
+      email: "bass@msow.choir",
       role: "member",
       voicePart: "Bass"
     }

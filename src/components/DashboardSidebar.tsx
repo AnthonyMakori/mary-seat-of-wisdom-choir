@@ -66,7 +66,7 @@ const DashboardSidebar = () => {
                 <Music className="w-5 h-5" />
               </div>
               <div>
-                <h2 className="font-playfair font-bold text-lg">MWOW</h2>
+                <h2 className="font-playfair font-bold text-lg">MSOW</h2>
                 <p className="text-xs opacity-80">{isAdmin ? 'Admin Panel' : 'Member Portal'}</p>
               </div>
             </div>
