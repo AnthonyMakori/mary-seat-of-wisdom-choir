@@ -8,10 +8,10 @@ const LeadershipHistory = () => {
       period: "2020 - Present",
       era: "Current Leadership",
       choirMaster: {
-        name: "Rev. Fr. Michael Thompson",
-        role: "Choir Master & Spiritual Director",
+        name: "Calistus Mwamzinyi",
+        role: "Lead Choir Master & Organist",
         tenure: "4 Years",
-        background: "Seminary-trained musician with Master's in Sacred Music",
+        background: "Trained musician with Master's in Sacred Music",
         achievements: [
           "Expanded choir membership by 40%",
           "Introduced Latin chant program",
@@ -22,14 +22,14 @@ const LeadershipHistory = () => {
       },
       keyMembers: [
         {
-          name: "Mrs. Sarah Johnson",
-          role: "Assistant Director & Organist",
+          name: "Eric",
+          role: "First Assistant Director",
           specialty: "Vocal arrangements and member development",
           image: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=200&h=200&fit=crop&crop=face"
         },
         {
-          name: "Mr. David Williams",
-          role: "Music Coordinator",
+          name: "John Mbuvi",
+          role: "Second Assistant Director",
           specialty: "Instrumental accompaniment and theory",
           image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
         }
