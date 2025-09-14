@@ -8,6 +8,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import ThemeToggleButton from "@/components/ThemeToggleButton";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,6 +50,7 @@ const Navigation = () => {
                 <span>{item.name}</span>
               </Link>
             ))}
+            <ThemeToggleButton />
             {user ? (
               <Button 
                 variant="outline" 
@@ -90,25 +92,28 @@ const Navigation = () => {
                       <span>{item.name}</span>
                     </Link>
                   ))}
-                  {user ? (
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="font-inter w-fit"
-                      onClick={() => navigate('/dashboard')}
-                    >
-                      Dashboard
-                    </Button>
-                  ) : (
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="font-inter w-fit"
-                      onClick={() => navigate('/login')}
-                    >
-                      Member Login
-                    </Button>
-                  )}
+                  <div className="pt-4 border-t border-border">
+                    <ThemeToggleButton className="w-full mb-3" />
+                    {user ? (
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="font-inter w-fit"
+                        onClick={() => navigate('/dashboard')}
+                      >
+                        Dashboard
+                      </Button>
+                    ) : (
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="font-inter w-fit"
+                        onClick={() => navigate('/login')}
+                      >
+                        Member Login
+                      </Button>
+                    )}
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
