@@ -35,12 +35,51 @@ const Schedule = () => {
       ]
     },
     {
+      day: "Monday",
+      sessions: [
+        {
+          time: "16:00 PM - 18:00 PM",
+          title: "Choir Practice",
+          location: "Church grounds",
+          type: "practice",
+          participants: "All Members",
+          description: "Weekly rehearsal for upcoming liturgical celebrations"
+        }
+      ]
+    },
+    {
+      day: "Tuesday",
+      sessions: [
+        {
+          time: "16:00 PM - 18:00 PM",
+          title: "Choir Practice",
+          location: "Church grounds",
+          type: "practice",
+          participants: "All Members",
+          description: "Weekly rehearsal for upcoming liturgical celebrations"
+        }
+      ]
+    },
+    {
       day: "Wednesday",
       sessions: [
         {
-          time: "7:00 PM - 8:30 PM",
+          time: "16:00 PM - 18:00 PM",
+          title: "Vocal Training",
+          location: "Church grounds",
+          type: "Training",
+          participants: "All Members",
+          description: "Weekly training to improve vocal techniques"
+        }
+      ]
+    },
+    {
+      day: "Thursday",
+      sessions: [
+        {
+          time: "16:00 PM - 18:00 PM",
           title: "Choir Practice",
-          location: "Parish Hall",
+          location: "Church grounds",
           type: "practice",
           participants: "All Members",
           description: "Weekly rehearsal for upcoming liturgical celebrations"
@@ -51,12 +90,12 @@ const Schedule = () => {
       day: "Friday",
       sessions: [
         {
-          time: "6:30 PM - 7:30 PM",
-          title: "Voice Training",
-          location: "Music Room",
-          type: "training",
-          participants: "New Members",
-          description: "Individual and small group voice development"
+          time: "16:00 PM - 18:00 PM",
+          title: "Choir Practice",
+          location: "Church grounds",
+          type: "practice",
+          participants: "All Members",
+          description: "Weekly rehearsal for upcoming liturgical celebrations"
         }
       ]
     },
