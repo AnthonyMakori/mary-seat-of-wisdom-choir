@@ -103,10 +103,10 @@ const Schedule = () => {
       day: "Saturday",
       sessions: [
         {
-          time: "4:00 PM - 5:00 PM",
+          time: "14:00 PM - 16:00 PM",
           title: "Section Practice",
-          location: "Parish Hall",
-          type: "sectional",
+          location: "Chaplaincy grounds",
+          type: "practice",
           participants: "By Voice Parts",
           description: "Separate practice for SATB sections"
         }
