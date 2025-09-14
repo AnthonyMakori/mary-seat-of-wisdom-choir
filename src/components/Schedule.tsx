@@ -9,20 +9,28 @@ const Schedule = () => {
       day: "Sunday",
       sessions: [
         {
-          time: "8:30 AM - 9:15 AM",
-          title: "Pre-Mass Rehearsal",
-          location: "Church Sanctuary",
-          type: "preparation",
+          time: "7:00 AM - 8:00 AM",
+          title: "First Mass Animation",
+          location: "Chaplaincy",
+          type: "Animation",
           participants: "All Members",
-          description: "Final rehearsal for Sunday Mass music"
+          description: "Leading the Church in animating the First Mass"
         },
         {
-          time: "9:30 AM - 10:45 AM",
-          title: "Sunday Mass Performance",
-          location: "Church Sanctuary",
-          type: "performance",
+          time: "8:30 AM - 9:45 AM",
+          title: "Second Mass Animation",
+          location: "Chaplaincy",
+          type: "Animation",
           participants: "All Members",
-          description: "Lead congregation in worship through sacred music"
+          description: "Leading the Church in animating the Second Mass"
+        },
+        {
+          time: "10:00 AM - 12:00 Noon",
+          title: "Third Mass Animation",
+          location: "Church Sanctuary",
+          type: "Animation",
+          participants: "All Members",
+          description: "Leading the Church in animating the Third Mass"
         }
       ]
     },
