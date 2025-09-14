@@ -37,7 +37,7 @@ const About = () => {
           <div className="flex items-center justify-center mb-4">
             <Crown className="w-8 h-8 text-accent mr-3" />
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground">
-              About Our Choir
+              About Msow Choir
             </h2>
           </div>
           <p className="text-xl text-muted-foreground font-inter max-w-3xl mx-auto leading-relaxed">
