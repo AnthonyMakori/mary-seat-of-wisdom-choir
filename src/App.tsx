@@ -13,6 +13,14 @@ import Schedule from "./pages/Schedule";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import Members from "./pages/dashboard/Members";
+import MusicLibrary from "./pages/dashboard/Music";
+import Events from "./pages/dashboard/Events";
+import Analytics from "./pages/dashboard/Analytics";
+import Settings from "./pages/dashboard/Settings";
+import MySchedule from "./pages/dashboard/Schedule";
+import PracticeNotes from "./pages/dashboard/Notes";
+import MyProfile from "./pages/dashboard/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +41,14 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/dashboard/members" element={<Members />} />
+              <Route path="/dashboard/music" element={<MusicLibrary />} />
+              <Route path="/dashboard/events" element={<Events />} />
+              <Route path="/dashboard/analytics" element={<Analytics />} />
+              <Route path="/dashboard/settings" element={<Settings />} />
+              <Route path="/dashboard/schedule" element={<MySchedule />} />
+              <Route path="/dashboard/notes" element={<PracticeNotes />} />
+              <Route path="/dashboard/profile" element={<MyProfile />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
